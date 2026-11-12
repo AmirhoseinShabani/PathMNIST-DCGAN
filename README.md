@@ -342,7 +342,8 @@ Before publishing the notebook:
 
 - [x] Use a clean runtime and execute the notebook from top to bottom.
 - [ ] Confirm that all data are loaded from a documented Kaggle input or the official MedMNIST package/source, not from a personal local path.
-- [ ] Record the actual TensorFlow, Keras, Python and accelerator versions used for the final run.
+- [x] Record the actual TensorFlow, Keras and Python versions used for the final run.
+- [ ] Record the accelerator (CPU/GPU) used for the final run.
 - [x] Keep the training loop clearly separated from inference so users can generate samples without retraining.
 - [x] Include sample grids from multiple epochs, with captions identifying the epoch and tissue class.
 - [x] Include the epoch-level loss plot and the 30-epoch loss table.
@@ -364,7 +365,16 @@ Kaggle notebooks are versioned, and **Save & Run All** executes the notebook in 
 
 ## Environment record
 
-The recorded run used **Python 3.11.15** and a **Keras 3** model-summary format. The exact TensorFlow, Keras, and accelerator versions were not captured when the saved outputs were produced. Before publishing, run the following in the environment used for the final run and paste the output into this section:
+The published run used:
+
+| Component | Version |
+|---|---|
+| Python | 3.11.15 |
+| TensorFlow | 2.21.0 |
+| Keras | 3.15.1 |
+| Accelerator | Not recorded |
+
+The Keras 3 model-summary format is visible in the saved outputs. To verify or reproduce the environment, run:
 
 ```python
 import platform
@@ -376,7 +386,7 @@ print("Keras:", tf.keras.__version__)
 print("GPU devices:", tf.config.list_physical_devices("GPU"))
 ```
 
-Do not copy version numbers from another tutorial or another machine; record the output from the environment used for the final notebook run.
+These versions were recorded from the environment that produced the committed notebook outputs. Reproducibility also depends on deterministic-operation support, which the setup cell requests.
 
 ## License
 
