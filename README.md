@@ -308,7 +308,6 @@ PathMNIST-DCGAN/
 ├── README.md
 ├── LICENSE
 ├── 01_PathMNIST_DCGAN.ipynb        # documented, publish-ready notebook
-├── Medical DCGAN.ipynb             # original working notebook (optional)
 ├── requirements.txt
 ├── .gitignore
 ├── training_history.npz            # 30-epoch losses from the recorded run
