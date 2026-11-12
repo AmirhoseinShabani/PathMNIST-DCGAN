@@ -1,0 +1,8 @@
+# Runtime dependencies for 01_PathMNIST_DCGAN.ipynb
+# The published run used Python 3.11.15. TensorFlow 2.16+ bundles Keras 3,
+# whose model-summary format is shown in the notebook outputs.
+tensorflow>=2.16
+medmnist>=3.0
+numpy
+matplotlib
+scikit-learn

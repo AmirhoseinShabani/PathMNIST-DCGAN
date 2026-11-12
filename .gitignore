@@ -1,0 +1,34 @@
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Internal drafting notes (not part of the published project)
+NOTEBOOK_MARKDOWN_GUIDE.md
+
+# Large optional mid-training snapshots.
+# Uncomment the next line if you only want to publish the final baseline
+# checkpoint in checkpoints/pathmnist_baseline/ (saves about 145 MB).
+# pathmnist_dcgan_checkpoints/
